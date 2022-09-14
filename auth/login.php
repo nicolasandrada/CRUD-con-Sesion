@@ -16,4 +16,6 @@ $r = $con->query($sql);
 if($r->num_rows > 0 ){
     $_SESSION['user'] = $r->fetch_assoc();
     //var_dump($_SESSION['user']['name']);
+
+    header("location: ../home.php");
 }
