@@ -11,7 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="auth/logout.php">cerrar sesion</a>
-    
+    <?php
+    include "include/navbar.php";
+    include "cargaproductos.php";
+    ?>
 </body>
 </html>

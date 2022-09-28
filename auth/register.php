@@ -20,9 +20,11 @@ if($r->num_rows > 0){
     header("location: ../index.php?error=ya existe el usuario");
 }else{
     $sql = "INSERT INTO user VALUES ( null, '$name', '$pass', '$birth_date', '$sex', '$photo')";
-    //$sql = "INSERT INTO user(name, pass) VALUES ( '$name', '$pass')";
+    //$sql = "INSERT INTO user( pass,name) VALUES ( '$pass','$name')";
     
     $con->query($sql);
+
+    //include 'login.php';
 }
 
 
